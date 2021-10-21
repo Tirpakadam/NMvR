@@ -1,23 +1,30 @@
 import rclpy
+import numpy as np
 from rclpy.node import Node
 
 from std_msgs.msg import String
+from std_msgs.msg import Float64MultiArray
+with open("map.csv", encoding='utf-8-sig') as file_name:
+    array = np.loadtxt(file_name, delimiter=";")
+a=array.ravel()
+d = list(a)
+
 
 
 class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
-        timer_period = 100
+        self.publisher_ = self.create_publisher(Float64MultiArray, 'topic', 10)
+        timer_period = 1
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
-    def timer_callback(self):1.0,
-        msg = String()
-        msg.data = 'Hello World: %d' % self.i
+    def timer_callback(self):
+        msg = Float64MultiArray()
+        msg.data = d
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
+        self.get_logger().info('Publishing: "%s"' % msg.data )
         self.i += 1
 
 

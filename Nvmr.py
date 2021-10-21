@@ -46,8 +46,8 @@ for x in range(100):
    for y in range(100):
      if((array[x][y])==1.0):
        cv.create_rectangle(10+x*10,10+y*10,10+x*10+10,10+y*10+10, tags=('rect'),fill='black')
-print(array[1][1])
-cv.create_rectangle(200, 200, 210, 210, tags=('rect'),fill='red')
+
+
 
 
 root.mainloop()

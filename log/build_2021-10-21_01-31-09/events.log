@@ -1,0 +1,41 @@
+[0.000000] (-) TimerEvent: {}
+[0.000226] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict()}
+[0.000260] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.098821] (-) TimerEvent: {}
+[0.199274] (-) TimerEvent: {}
+[0.299906] (-) TimerEvent: {}
+[0.332571] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/nmvr/zadanie/NMvR/build/py_pubsub/build', 'install', '--prefix', '/home/nmvr/zadanie/NMvR/install/py_pubsub', '--record', '/home/nmvr/zadanie/NMvR/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/nmvr/zadanie/NMvR/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US', 'USER': 'nmvr', 'LC_TIME': 'sk_SK.UTF-8', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '806', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/nmvr', 'DESKTOP_SESSION': 'xubuntu', 'ROS_PYTHON_VERSION': '3', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'LC_MONETARY': 'sk_SK.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'nmvr', 'WINDOWID': '67108867', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'CLUTTER_BACKEND': 'x11', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/nmvr-VirtualBox:@/tmp/.ICE-unix/720,unix/nmvr-VirtualBox:/tmp/.ICE-unix/720', 'GDM_LANG': 'en_US', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_MENU_PREFIX': 'xfce-', 'LC_ADDRESS': 'sk_SK.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0.0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'XFCE', 'LC_TELEPHONE': 'sk_SK.UTF-8', 'XDG_SESSION_DESKTOP': 'xubuntu', 'XAUTHORITY': '/home/nmvr/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/nmvr', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'sk_SK.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'xubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'sk_SK.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'sk_SK.UTF-8', 'XDG_VTNR': '7', 'PWD': '/home/nmvr/zadanie/NMvR/build/py_pubsub', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share', 'PYTHONPATH': '/home/nmvr/zadanie/NMvR/install/py_pubsub/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'sk_SK.UTF-8', 'LC_PAPER': 'sk_SK.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.401619] (-) TimerEvent: {}
+[0.501942] (-) TimerEvent: {}
+[0.603252] (-) TimerEvent: {}
+[0.668174] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[0.669317] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[0.669970] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[0.670395] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[0.670748] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[0.671050] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[0.703979] (-) TimerEvent: {}
+[0.725156] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[0.727063] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[0.727734] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[0.728081] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[0.728593] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/subscriber.py -> /home/nmvr/zadanie/NMvR/build/py_pubsub/build/lib/py_pubsub\n'}
+[0.729272] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/mapread.py -> /home/nmvr/zadanie/NMvR/build/py_pubsub/build/lib/py_pubsub\n'}
+[0.729994] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[0.732184] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[0.734379] (py_pubsub) StdoutLine: {'line': b'copying /home/nmvr/zadanie/NMvR/build/py_pubsub/build/lib/py_pubsub/subscriber.py -> /home/nmvr/zadanie/NMvR/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[0.734811] (py_pubsub) StdoutLine: {'line': b'copying /home/nmvr/zadanie/NMvR/build/py_pubsub/build/lib/py_pubsub/mapread.py -> /home/nmvr/zadanie/NMvR/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[0.735629] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/nmvr/zadanie/NMvR/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/subscriber.py to subscriber.cpython-38.pyc\n'}
+[0.738132] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/nmvr/zadanie/NMvR/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/mapread.py to mapread.cpython-38.pyc\n'}
+[0.738898] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[0.739768] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.741758] (py_pubsub) StdoutLine: {'line': b"removing '/home/nmvr/zadanie/NMvR/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[0.742339] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/nmvr/zadanie/NMvR/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info\n'}
+[0.743206] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[0.764719] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /home/nmvr/zadanie/NMvR/install/py_pubsub/lib/py_pubsub\n'}
+[0.765280] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/nmvr/zadanie/NMvR/install/py_pubsub/lib/py_pubsub\n'}
+[0.765968] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/nmvr/zadanie/NMvR/build/py_pubsub/install.log'\n"}
+[0.807358] (py_pubsub) CommandEnded: {'returncode': 0}
+[0.807847] (-) TimerEvent: {}
+[0.817399] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[0.818502] (-) EventReactorShutdown: {}
