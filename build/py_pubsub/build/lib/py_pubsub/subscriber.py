@@ -4,12 +4,12 @@ import tkinter as tk
 import threading
 import time
 from rclpy.node import Node
+from PIL import ImageTk, Image  
 
-from std_msgs.msg import String
 from std_msgs.msg import Float64MultiArray
 
 root = tk.Tk()
-cv = tk.Canvas(root, height=1200, width=1200)
+cv = tk.Canvas(root, height=1000, width=1000)
 array=np.zeros((100,100))
    
 def onclick(event):
@@ -28,8 +28,8 @@ def onclick(event):
      array[mouse_x][mouse_y]=1
     elif (array[mouse_x][mouse_y]==1) :
      array[mouse_x][mouse_y]=0
-    print(array[mouse_x][mouse_y])
     np.savetxt("map.csv",array, delimiter=";")
+
 class MinimalSubscriber(Node):
     def __init__(self):
         super().__init__('minimal_subscriber')
@@ -58,17 +58,26 @@ def map():
        for y in range(100):
           if(((array)[x][y])==1.0):
              cv.create_rectangle(10+x*10,10+y*10,10+x*10+10,10+y*10+10, tags=('rect'),fill='black')
-    cv.create_rectangle(200, 200, 210, 210, tags=('rect'),fill='red')
+
+    image1 = Image.open("index.png")
+    image1 = image1.resize((30, 30), Image.ANTIALIAS)
+    test = ImageTk.PhotoImage(image1)
+    label1 = tk.Label(image=test)
+    label1.image = test
+    label1.place(x=50, y=100)
     root.mainloop()
+   
 def listening(args=None):
     rclpy.init(args=args)
     minimal_subscriber = MinimalSubscriber()
     rclpy.spin_once(minimal_subscriber)
     minimal_subscriber.destroy_node()
     rclpy.shutdown()
+
 def main(args=None):
     listening()
     mapa=threading.Thread(target=map())
     mapa.start()
+
 if __name__ == '__main__':
      main()
