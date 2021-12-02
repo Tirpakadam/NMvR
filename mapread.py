@@ -15,7 +15,7 @@ class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(Float64MultiArray, 'topic', 10)
+        self.publisher_ = self.create_publisher(Float64MultiArray, 'Map', 10)
         timer_period = 1
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
@@ -24,7 +24,7 @@ class MinimalPublisher(Node):
         msg = Float64MultiArray()
         msg.data = listed
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data )
+        self.get_logger().info('Map sended'  )
         self.i += 1
 
 
